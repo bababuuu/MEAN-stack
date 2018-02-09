@@ -1,0 +1,28 @@
+.submit-btn {
+	background-color: #b1dbff;
+	margin: 10px 0 10px 0;	
+}
+
+.post-stream{
+	margin-top: 5px;
+}
+
+.post {
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.odd {
+	background: #f2f9ff;
+}
+
+.even {
+	background: #eceff3;
+}
+
+.form-auth {
+	max-width: 330px;
+	padding: 5px;
+	margin: 0 auto;
+}
