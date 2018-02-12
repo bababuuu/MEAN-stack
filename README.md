@@ -3,7 +3,7 @@ Twitter-like webapp built using MEAN (mongo, express, angular, nodejs) as shown 
 
 
 ### Credits to 'https://github.com/hwz/chirp' for the twitter clone
-The examples codes given on the link above may not work for angular 1.6 (such as syntax changes for handling 'http' success/failure callbacks). Thus created a 'working' example from scratch for purpose of learning and sharing. Please use the working code in 'backend' folder :))
+The examples codes given on the link above may not work for angular 1.6 as the tutorial was built using an older version some syntax are deprecated (such as syntax changes for handling 'http' success()/failure() callbacks and now used with then() instead). Thus created a 'working' example from scratch for purpose of learning and sharing. Please use the working code in 'backend' folder :))
 
 ###Installation instructions (for noobs like me) to run locally (not cloud)
 1. Navigate 'backend' folder. 
