@@ -1,5 +1,5 @@
 # MEAN-stack
-Twitter-like webapp built using MEAN as shown in MVA 
+Twitter-like webapp built using MEAN (mongo, express, angular, nodejs) as shown in MVA 
 
 
 ### Credits to 'https://github.com/hwz/chirp' for the twitter clone
