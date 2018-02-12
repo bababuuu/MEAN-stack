@@ -7,6 +7,7 @@ The examples codes given on the link above may not work for angular 1.6 as the t
 
 ###Installation instructions (for noobs like me) to run locally (not cloud)
 1. Navigate 'backend' folder. 
-2. While in directory run `npm install` and `npm run`
-3. Install mongodb and run database
-4. Once server is started, run localhost:3000 url.
+2. While in directory run `npm install` to install all its dependencies it needs.
+3. Run `npm start` to start server.
+4. Install mongodb and run database.
+5. Go to localhost:3000 url to use app.
