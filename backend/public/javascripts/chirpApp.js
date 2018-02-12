@@ -1,4 +1,9 @@
-var app = angular.module('chirpApp', ['ngRoute']);
+var app = angular.module('chirpApp', ['ngRoute']).run(function($rootScope){
+	//global var boolean flag to check if user authetnicated
+	$rootScope.authenticated = false;
+	$rootScope.current_user = "";
+
+});
 
 
 app.config(function($routeProvider){
@@ -34,18 +39,24 @@ app.controller('mainController', function($scope){
 	};
 });
 
-app.controller('authController', function($scope){
-	$scope.user = {username: '', password: ''};
-	$scope.error_message = '';
+app.controller('authController', function($scope, $rootScope, $http, $location){
+	// $scope.user = {username: '', password: ''};
+	// $scope.error_message = '';
 
 	$scope.login = function(){
-		//placeholder until authentication is implemented
-		$scope.error_message = 'login request for ' + $scope.user.username;
-	}
+		$http.post('/auth/login', $scope.user).then(function(response){
+			$rootScope.authenticated = true;
+			$rootScope.current_user = response.data.user.username;
+			$location.path('/');
+		});
+	};
 
 	$scope.register = function(){
-		//placeholder until authentication is implemented
-		$scope.error_message = 'registration request for ' + $scope.user.username;
-	}
+		$http.post('/auth/signup', $scope.user).then(function(response){
+			$rootScope.authenticated = true;
+			$rootScope.current_user = response.data.user.username;
+			$location.path('/');
+		});
+	};
 	
 });
